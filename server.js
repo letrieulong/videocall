@@ -1,9 +1,9 @@
 const Socket = require("websocket").server
-const http = require("http")
+const http = require("https")
 
 const server = http.createServer((req, res) => {})
 
-server.listen(process.env.PORT || 3000, () => {
+server.listen(process.env.PORT || 443, () => {
     console.log("Listening on port ", server.address().port)
 })
 
