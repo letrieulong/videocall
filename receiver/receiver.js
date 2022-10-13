@@ -1,4 +1,4 @@
-const webSocket = new WebSocket("ws://localhost:443")
+const webSocket = new WebSocket("wss://"+location.host)
 
 webSocket.onmessage = (event) => {
     handleSignallingData(JSON.parse(event.data))
