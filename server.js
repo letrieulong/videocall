@@ -1,4 +1,4 @@
-const Socket = require("websocket").server
+const Socket = require("ws").server
 const http = require("http")
 
 const server = http.createServer((req, res) => {})
