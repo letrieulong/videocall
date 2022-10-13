@@ -1,4 +1,4 @@
-const webSocket = new WebSocket("ws://localhost:3000")
+const webSocket = new WebSocket("ws://videolive2.herokuapp.com:"+process.env.PORT)
 
 webSocket.onmessage = (event) => {
     handleSignallingData(JSON.parse(event.data))
