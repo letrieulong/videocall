@@ -1,4 +1,4 @@
-const webSocket = new WebSocket("wss://videolive2.herokuapp.com")
+const webSocket = new WebSocket("wss://192.168.10.24")
 
 webSocket.onmessage = (event) => {
     handleSignallingData(JSON.parse(event.data))
